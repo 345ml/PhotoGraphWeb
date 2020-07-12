@@ -1,85 +1,202 @@
 import Head from 'next/head'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faApple } from '@fortawesome/free-brands-svg-icons';
 
 export const Home = (): JSX.Element => (
-  <div className="container">
+  <div>
     <Head>
-      <title>Create Next App</title>
-      <link rel="icon" href="/favicon.ico" />
+      <title>PhotoGraph</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     </Head>
 
-    <main>
-      <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
-
-      <p className="description">
-        Get started by editing <code>pages/index.tsx</code>
-      </p>
-
-      <button
-        onClick={() => {
-          window.alert('With typescript and Jest')
-        }}
-      >
-        Test Button
-      </button>
-
-      <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-
-        <a
-          href="https://github.com/vercel/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className="card"
-        >
-          <h3>Deploy &rarr;</h3>
-          <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
-        </a>
+    <div className="top content">
+      <div className="left">
+        <h1 className="title">
+          PhotoGraph
+        </h1>
+        <div className="download">
+          <a className="downloadApple" target="downloadApple" href="https://storage.googleapis.com/photograph-d8011.appspot.com/dist/PhotoGraph-0.1.0.dmg">
+            <FontAwesomeIcon style={{ fontSize: '2em', marginRight: '0.3em', top: 3, position: 'relative' }} icon={faApple} />
+            Download
+          </a>
+        </div>       
       </div>
-    </main>
+      <div className="right">
+        <img src="/mac.png" />
+      </div>
+    </div>
 
-    <footer>
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-      </a>
-    </footer>
+    <div className="content">
+      <h2 className="tagline">写真の管理、これ1本</h2>
+      <p className="subtitle">〜 もうファイルのリネームしなくていいよ 〜</p>
+    </div>
+
+    <div className="content about">
+      <h3>🥺</h3>
+      <p>
+        写真管理アプリを探してみたけど、どれも微妙なものばかりという経験はありませんか？
+        そんなあなたに最適なアプリです。
+      </p>
+    </div>
+
+    <div className="content">
+      <div className="point">
+        <h3>😎</h3>
+        <p>パソコンに保存されているファイルを自動で認識します。面倒な作業は一切必要ありません。</p>
+      </div>
+      <div className="point">
+        <h3>🧐</h3>
+        <p>ファイルのEXIF情報を解析し、日付を元に並べて確認することができます。</p>
+      </div>
+      <div className="point">
+        <h3>🤐</h3>
+        <p>もとのファイルに修正を加えることは一切ありません。</p>
+      </div>
+      <div className="point">
+        <h3>🤑</h3>
+        <p>ただいまベータ期間中につき、無料でご利用いただけます。</p>
+      </div>
+      <div className="point">
+        <h3>🤥</h3>
+        <p>今後も様々な機能が追加され、アプリは自動でアップグレードされます。（される予定です。）</p>
+      </div>
+    </div>
+
+    <div className="content review">
+      <h2>ユーザの声的なもの</h2>
+      <div className="user">
+        <img src="/user.jpg" />
+      </div>
+      <p className="userName">ニューヨーク在住　30代男性</p>
+      <p className="userVoice">本当に驚いたよ。これは最高にクールなアプリだ。例えるなら、ジャスティン・ビーバーがクリスティアーノ・ロナウド並にサッカーが上手いようなもんだね。これのおかげでガールフレンドもできたんだ。毎週使ってるよ。</p>
+    </div>
+
+    <div className="content whoami">
+      <h2>whoami</h2>
+      <p>
+        <a href="https://twitter.com/_horotter" target="twitter">Keisuke Horota</a>
+        <br />
+        Software developer
+        <br />
+        Based in Tokyo
+      </p>
+      <p>何かありましたらお気軽にお問い合わせください。</p>
+    </div>
+      
 
     <style jsx>{`
-      .container {
-        min-height: 100vh;
-        padding: 0 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+      img {
+        width: 100%;
+        display: block;
       }
 
-      main {
-        padding: 5rem 0;
-        flex: 1;
+      h2 {
+        font-size: 1.7em;
+      }
+
+      .content {
+        max-width: 700px;
+        margin: 2em auto;
+        padding: 0 1em;
+      }
+
+      .top {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
+      }
+      .left {
+        flex: 1;
+      }
+      .right {
+        flex: 2;
+      }
+
+      .title {
+        font-family: 'Noto Serif', serif;
+        letter-spacing: 0.2em;
+        // font-size: 2em;
+      }
+
+      .download {
+        display: flex;
+        justify-content: center;
+      }
+      .downloadApple {
+        border: 1px white solid;
+        padding: 0.5em 2em 0.7em 2em;
+        font-weight: bold;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+      }
+
+      .tagline {
+        text-align: center;
+        font-size: 3em;
+      }
+      .subtitle {
+        font-style: italic;
+        text-align: center;
+        top: -2em;
+        position: relative;
+      }
+
+      .about h3 {
+        text-align: center;
+        font-size: 3em;
+      }
+
+      .point {
+        display: flex;
+      }
+      .point h3 {
+        font-size: 2em;
+        margin-bottom: 0;
+      }
+      .point p {
+        font-size: 1.3em;
+        margin: 2em 0 0 1em;
+        top: 0.2em;
+        position: relative;
+      }
+
+      .review {
+        margin-top: 5em;
+      }
+      .review h2 {
+        text-align: center;
+      }
+      .user {
+        border-radius: 50%;
+        overflow: hidden;
+        max-width: 150px;
+        margin: 0 auto;
+      }
+      .user img {
+        display: block;
+        width: 100%;
+      }
+      .userName {
+        font-size: 1.1em;
+        text-align: center;
+        font-weight: bold;
+      }
+      .userVoice {
+        font-style: italic;
+      }
+
+
+      .whoami {
+        margin-top: 5em;
+      }
+      .whoami h2 {
+        text-align: center;
+      }
+      .whoami p {
+        text-align: center;
+      }
+      .whoami a {
+        color: white;
       }
 
       footer {
@@ -91,120 +208,13 @@ export const Home = (): JSX.Element => (
         align-items: center;
       }
 
-      footer img {
-        margin-left: 0.5rem;
-      }
-
-      footer a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      .title a {
-        color: #0070f3;
-        text-decoration: none;
-      }
-
-      .title a:hover,
-      .title a:focus,
-      .title a:active {
-        text-decoration: underline;
-      }
-
-      .title {
-        margin: 0;
-        line-height: 1.15;
-        font-size: 4rem;
-      }
-
-      .title,
-      .description {
-        text-align: center;
-      }
-
-      .description {
-        line-height: 1.5;
-        font-size: 1.5rem;
-      }
-
-      code {
-        background: #fafafa;
-        border-radius: 5px;
-        padding: 0.75rem;
-        font-size: 1.1rem;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-      }
-
-      .grid {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        max-width: 800px;
-        margin-top: 3rem;
-      }
-
-      .card {
-        margin: 1rem;
-        flex-basis: 45%;
-        padding: 1.5rem;
-        text-align: left;
-        color: inherit;
-        text-decoration: none;
-        border: 1px solid #eaeaea;
-        border-radius: 10px;
-        transition: color 0.15s ease, border-color 0.15s ease;
-      }
-
-      .card:hover,
-      .card:focus,
-      .card:active {
-        color: #0070f3;
-        border-color: #0070f3;
-      }
-
-      .card h3 {
-        margin: 0 0 1rem 0;
-        font-size: 1.5rem;
-      }
-
-      .card p {
-        margin: 0;
-        font-size: 1.25rem;
-        line-height: 1.5;
-      }
-
-      .logo {
-        height: 1em;
-      }
-
-      @media (max-width: 600px) {
-        .grid {
-          width: 100%;
+      @media screen and (max-width: 700px) {
+        .top {
           flex-direction: column;
         }
-      }
-    `}</style>
-
-    <style jsx global>{`
-      html,
-      body {
-        padding: 0;
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-      }
-
-      * {
-        box-sizing: border-box;
+        .tagline {
+          font-size: 8vw;
+        }
       }
     `}</style>
   </div>

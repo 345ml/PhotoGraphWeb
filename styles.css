@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+
+body {
+  background-color: black;
+  color: white;
+  line-height: 2;
+  /* font-family: courier,arial,helvetica; */
+  font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}

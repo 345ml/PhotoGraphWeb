@@ -1,3 +1,3 @@
 module.exports = {
-  assetPrefix: '/PhotoGraphWeb',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/PhotoGraphWeb' : '',
 };

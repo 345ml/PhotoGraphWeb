@@ -7,6 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next export",
+    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages",
     "type-check": "tsc --pretty --noEmit",
     "format": "prettier --write **/*.{js,ts,tsx}",
     "lint": "eslint . --ext ts --ext tsx --ext js",
@@ -26,6 +28,9 @@
     ]
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "next": "latest",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
