@@ -17,12 +17,12 @@ export const Home = (): JSX.Element => (
         <div className="download">
           <a className="downloadApple" target="downloadApple" href="https://storage.googleapis.com/photograph-d8011.appspot.com/dist/PhotoGraph-0.1.0.dmg">
             <FontAwesomeIcon style={{ fontSize: '2em', marginRight: '0.3em', top: 3, position: 'relative' }} icon={faApple} />
-            Download
+            Download .dmg
           </a>
         </div>       
       </div>
       <div className="right">
-        <img src="/mac.png" />
+        <img src="./mac.png" />
       </div>
     </div>
 
@@ -65,7 +65,7 @@ export const Home = (): JSX.Element => (
     <div className="content review">
       <h2>ユーザの声的なもの</h2>
       <div className="user">
-        <img src="/user.jpg" />
+        <img src="./user.jpg" />
       </div>
       <p className="userName">ニューヨーク在住　30代男性</p>
       <p className="userVoice">本当に驚いたよ。これは最高にクールなアプリだ。例えるなら、ジャスティン・ビーバーがクリスティアーノ・ロナウド並にサッカーが上手いようなもんだね。これのおかげでガールフレンドもできたんだ。毎週使ってるよ。</p>
@@ -80,7 +80,7 @@ export const Home = (): JSX.Element => (
         <br />
         Based in Tokyo
       </p>
-      <p>何かありましたらお気軽にお問い合わせください。</p>
+      <p>お気軽にお問い合わせください。</p>
     </div>
       
 
@@ -154,8 +154,8 @@ export const Home = (): JSX.Element => (
         margin-bottom: 0;
       }
       .point p {
-        font-size: 1.3em;
-        margin: 2em 0 0 1em;
+        // font-size: 1.2em;
+        margin: 3em 0 0 1em;
         top: 0.2em;
         position: relative;
       }
