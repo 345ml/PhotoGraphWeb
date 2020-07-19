@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Top from '../components/top';
 import Me from '../components/me';
 
-export const Home = (): JSX.Element => (
+export const Ja = (): JSX.Element => (
   <div>
     <Head>
       <title>PhotoGraph</title>
@@ -12,53 +12,53 @@ export const Home = (): JSX.Element => (
     <Top />
 
     <div className="content">
-      <h2 className="tagline">Photo management, just one.</h2>
-      <p className="subtitle">〜 Don't have to rename the files anymore 〜</p>
+      <h2 className="tagline">写真の管理、これ1本</h2>
+      <p className="subtitle">〜 もうファイルのリネームしなくていいよ 〜</p>
     </div>
 
     <div className="content about">
       <h3>🥺</h3>
       <p>
-        Have you ever tried to find a photo management app, but all of them are too subtle?
-        This is the perfect app for you.
+        写真管理アプリを探してみたけど、どれも微妙なものばかりという経験はありませんか？
+        そんなあなたに最適なアプリです。
       </p>
     </div>
 
     <div className="content">
       <div className="point">
         <h3>😎</h3>
-        <p>Automatically recognizes files stored on your computer. You don't need to do any troublesome work at all.</p>
+        <p>パソコンに保存されているファイルを自動で認識します。面倒な作業は一切必要ありません。</p>
       </div>
       <div className="point">
         <h3>🧐</h3>
-        <p>The EXIF information of the files can be analyzed and viewed side by side based on the date.</p>
+        <p>ファイルのEXIF情報を解析し、日付を元に並べて確認することができます。</p>
       </div>
       <div className="point">
         <h3>🤐</h3>
-        <p>No modifications will be made to the original file.</p>
+        <p>もとのファイルに修正を加えることは一切ありません。</p>
       </div>
       <div className="point">
         <h3>🤑</h3>
-        <p>We are currently in the beta phase and it's free to use.</p>
+        <p>ただいまベータ期間中につき、無料でご利用いただけます。</p>
       </div>
       <div className="point">
         <h3>🤥</h3>
-        <p>Various features will continue to be added and the app will be automatically upgraded. (Maybe...!)</p>
+        <p>今後も様々な機能が追加され、アプリは自動でアップグレードされます。（される予定です。）</p>
       </div>
     </div>
 
     <div className="content review">
-      <h2>Users voice (?)</h2>
+      <h2>ユーザの声的なもの</h2>
       <div className="user">
         <img src="./user.jpg" />
       </div>
-      <p className="userName">Male in his 30s living in New York City.</p>
-      <p className="userVoice">I was really surprised. This is the coolest app ever. To use an analogy, it's like Justin Bieber is as good a soccer player as Cristiano Ronaldo. That's what it's all about. It's also helped me get a girlfriend. I use it every week.</p>
+      <p className="userName">ニューヨーク在住　30代男性</p>
+      <p className="userVoice">本当に驚いたよ。これは最高にクールなアプリだ。例えるなら、ジャスティン・ビーバーがクリスティアーノ・ロナウド並にサッカーが上手いようなもんだね。これのおかげでガールフレンドもできたんだ。毎週使ってるよ。</p>
     </div>
 
     <Me />
 
-    <p className="text center">Please feel free to contact us for more information.</p>
+    <p className="text center">お気軽にお問い合わせください。</p>      
 
     <style jsx>{`
       h2 {
@@ -121,12 +121,15 @@ export const Home = (): JSX.Element => (
       }
 
       @media screen and (max-width: 700px) {
+        .top {
+          flex-direction: column;
+        }
         .tagline {
-          font-size: 6vw;
+          font-size: 8vw;
         }
       }
     `}</style>
   </div>
 )
 
-export default Home
+export default Ja

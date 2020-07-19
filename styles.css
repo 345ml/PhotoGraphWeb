@@ -7,3 +7,13 @@ body {
   /* font-family: courier,arial,helvetica; */
   font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
 }
+
+.content {
+  max-width: 700px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+.text.center {
+  text-align: center;
+}
