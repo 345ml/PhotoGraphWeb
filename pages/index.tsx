@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faApple } from '@fortawesome/free-brands-svg-icons';
+import Top from '../components/top';
 
 export const Home = (): JSX.Element => (
   <div>
@@ -9,22 +8,7 @@ export const Home = (): JSX.Element => (
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     </Head>
 
-    <div className="top content">
-      <div className="left">
-        <h1 className="title">
-          PhotoGraph
-        </h1>
-        <div className="download">
-          <a className="downloadApple" target="downloadApple" href="https://storage.googleapis.com/photograph-d8011.appspot.com/dist/PhotoGraph-0.1.0.dmg">
-            <FontAwesomeIcon style={{ fontSize: '2em', marginRight: '0.3em', top: 3, position: 'relative' }} icon={faApple} />
-            Download .dmg
-          </a>
-        </div>       
-      </div>
-      <div className="right">
-        <img src="./mac.png" />
-      </div>
-    </div>
+    <Top />
 
     <div className="content">
       <h2 className="tagline">写真の管理、これ1本</h2>
@@ -85,49 +69,8 @@ export const Home = (): JSX.Element => (
       
 
     <style jsx>{`
-      img {
-        width: 100%;
-        display: block;
-      }
-
       h2 {
         font-size: 1.7em;
-      }
-
-      .content {
-        max-width: 700px;
-        margin: 2em auto;
-        padding: 0 1em;
-      }
-
-      .top {
-        display: flex;
-        align-items: center;
-      }
-      .left {
-        flex: 1;
-      }
-      .right {
-        flex: 2;
-      }
-
-      .title {
-        font-family: 'Noto Serif', serif;
-        letter-spacing: 0.2em;
-        // font-size: 2em;
-      }
-
-      .download {
-        display: flex;
-        justify-content: center;
-      }
-      .downloadApple {
-        border: 1px white solid;
-        padding: 0.5em 2em 0.7em 2em;
-        font-weight: bold;
-        background-color: white;
-        color: black;
-        text-decoration: none;
       }
 
       .tagline {
