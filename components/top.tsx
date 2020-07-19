@@ -16,7 +16,7 @@ const Top = React.memo(() => (
       </div>       
     </div>
     <div className="right">
-      <img src="../mac.png" />
+      <img src="./mac.png" />
     </div>
 
     <style jsx>{`
