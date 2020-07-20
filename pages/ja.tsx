@@ -7,6 +7,7 @@ export const Ja = (): JSX.Element => (
     <Head>
       <title>PhotoGraph</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+      <meta name="google-site-verification" content="ILXa7xcbAN955uEOcQCuocYJ5wv_IaOEMCwbVurbuHM" />
     </Head>
 
     <Top />
